@@ -66,4 +66,8 @@ def digits_as_string(digits, base):
 
 def convert_base(original_digits, original_base, destination_base):
     """Conversion from any base to any other base"""
-    pass
+    decimal_number = base_to_decimal(original_digits, original_base)
+    print(decimal_to_base(decimal_number, destination_base))
+
+
+convert_base([1, 1, 2, 0], 3, 2)
